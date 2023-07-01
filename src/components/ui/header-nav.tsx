@@ -14,9 +14,7 @@ function HeaderNav() {
       <div className="hover:bg-gray-100 p-5 rounded-full flex items-center justify-center cursor-pointer">
         <TfiWorld className="h-6 w-6 bg-white" />
       </div>
-     
-        <Profile />
-    
+      <Profile />
     </nav>
   );
 }
