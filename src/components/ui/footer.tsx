@@ -6,9 +6,22 @@ function Footer() {
   return (
     <footer className=" h-20 flex justify-between items-center text-[1.4rem]">
       <nav className="flex justify-between items-center gap-4">
-        <p>© 2023 Airbnb, Inc.</p>·<Link href="/">Privacy</Link>·
-        <Link href="/">Terms</Link>·<Link href="/">Sitemap</Link>·
-        <Link href="/">Destinations</Link>
+        <p>© 2023 Airbnb, Inc.</p>·
+        <Link className="hover:underline" href="/">
+          Privacy
+        </Link>
+        ·
+        <Link className="hover:underline" href="/">
+          Terms
+        </Link>
+        ·
+        <Link className="hover:underline" href="/">
+          Sitemap
+        </Link>
+        ·
+        <Link className="hover:underline" href="/">
+          Destinations
+        </Link>
       </nav>
       <nav className="flex justify-between items-center gap-4">
         <div className="hover:underline flex items-center justify-center cursor-pointer gap-3">
