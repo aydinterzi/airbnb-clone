@@ -18,16 +18,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Container>
-          <Header />
-        </Container>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <div className="fixed top-0 left-0 w-full">
+          <Container>
+            <Header />
+          </Container>
+          <hr />
+        </div>
         <Container>
           <main>{children}</main>
         </Container>
-        {/* <Container>
-          <Footer />
-        </Container> */}
+        <div className="fixed bottom-0 left-0 w-full ">
+          <hr />
+          <Container>
+            <Footer />
+          </Container>
+        </div>
       </body>
     </html>
   );
